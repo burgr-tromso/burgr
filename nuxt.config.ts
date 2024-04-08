@@ -6,4 +6,7 @@ export default defineNuxtConfig({
   ui: {
     icons: ['heroicons', "pixelarticons"]
   },
+  app: {
+    pageTransition: {name:'page', mode: 'in-out'}
+  }
 })

@@ -1,9 +1,8 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
-  <div class=" min-h-screen bg-cover bg-center bg-[url('/assets/background.png')] dark:bg-[url('/assets/background2.jpg')]" >
+  <div class=" min-h-screen overscroll-none bg-fixed bg-cover bg-center bg-[url('/assets/background-light.png')] dark:bg-[url('/assets/background-dark.png')]" >
     <UPage>
       <UPageBody>
         <NuxtPage/>
@@ -13,13 +12,4 @@
 </template>
 
 <style scoped>
-
-
-.font {
-  font-family: 'Press Start 2P';
-}
-
-.background{
-  background-image: url();
-}
 </style>
