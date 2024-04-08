@@ -1,6 +1,14 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-  <div class="min-h-screen bg-cover bg-center bg-[url('/assets/background.jpg')] dark:bg-[url('/assets/background2.jpg')]" >
-    <NuxtPage/>
+  <div class=" min-h-screen bg-cover bg-center bg-[url('/assets/background.png')] dark:bg-[url('/assets/background2.jpg')]" >
+    <UPage>
+      <UPageBody>
+        <NuxtPage/>
+      </UPageBody>
+    </UPage>
   </div>
 </template>
 

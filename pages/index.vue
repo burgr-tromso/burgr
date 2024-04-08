@@ -1,15 +1,30 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+
+const links = [
+  {
+  to: '/meny',
+  label: 'Meny'
+  },
+  {
+  to: '/contact',
+  label: 'Kontakt Oss'
+  },
+  {
+  to: '/mer',
+  label: 'Noe Mer'
+  },
+]
+
+</script>
 
 <template>
   <div>
-    <h1 class="font text-8xl text-center pt-24" >
+    <h1 class="font text-4xl md:text-8xl text-center pt-48 pb-24" >
       Burgr
     </h1>
-    <div class="font text-center my-24 flex flex-col">
-      <NuxtLink class="group" to="/test1" ><UIcon class=" opacity-0 group-hover:opacity-100 group-aria-selected:opacity-100" name="i-pixelarticons-play"/>Meny 1</NuxtLink>
-      <NuxtLink class="group" to="/test2" ><UIcon class=" opacity-0 group-hover:opacity-100 group-aria-selected:opacity-100" name="i-pixelarticons-play"/>Meny 2</NuxtLink>
-      <NuxtLink class="group" to="/test3" ><UIcon class=" opacity-0 group-hover:opacity-100 group-aria-selected:opacity-100" name="i-pixelarticons-play"/>Meny 3</NuxtLink>
-    </div>
+    <span class="space-y-4">
+      <RetroLink class="md:text-2xl" :label="link.label" :to="link.to" v-for="link in links"/>
+    </span>
   </div>
 </template>
 

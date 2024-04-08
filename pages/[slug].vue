@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
 
 const route = useRoute()
 
@@ -77,15 +76,14 @@ const types = [
   }
 ]
 
-const selection = ref()
-
 </script>
 
 <template>
+<div class="mx-16">
   <h1 class="font text-8xl text-center pt-24 mx-auto pb-16">
-    {{ route.params.slug }}
+    Meny
   </h1>
-  <div class=" rounded-lg bg-slate-200 dark:bg-slate-700 bg-opacity-75 max-w-lg mx-auto px-8 py-12  border-slate-700 dark:border-slate-200 border-4 shadow-xl space-y-6">
+  <div class=" rounded-lg bg-slate-200 dark:bg-slate-700 bg-opacity-75 max-w-2xl mx-auto px-8 py-12  border-slate-700 dark:border-slate-200 border-4 shadow-xl space-y-6">
     <UTabs :items="types" class="w-full">
     <template #item="{ item }">
         <div v-if="item.key === 'burgers'" class="space-y-3">
@@ -99,16 +97,15 @@ const selection = ref()
         </div>
     </template>
   </UTabs>
-  <div class="font text-center">
-    <NuxtLink class="group" to="/">
-      <UIcon class=" opacity-0 group-hover:opacity-100 group-aria-selected:opacity-100" name="i-pixelarticons-play" />
-        Tilbake
-      </NuxtLink>
-    </div>
+  <RetroLink class="pb-4" label="Tilbake" to="/"/>
+    <span class="text-center">
+      <h4>Allergies:</h4>
+      <p>W - Wheat, M - Milk, SO - Soya, EG - Egg, SE - Mustard, SEL - Celery, F - Fish, SES - Sesamy</p>
+    </span>
   </div>
+</div>
 </template>
 
 <style scoped>
-.font {
-  font-family: 'Press Start 2P';
-}</style>
+.font { font-family: 'Press Start 2P' }
+</style>
