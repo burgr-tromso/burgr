@@ -1,8 +1,10 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const route = useRoute()
+</script>
 
 <template>
   <div>
-    Page: slug
+    <PageTitle :title="route.params.slug" />
   </div>
 </template>
 
