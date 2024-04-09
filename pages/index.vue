@@ -2,8 +2,11 @@
 
 const links = [
   {
-  to: '/menu',
-  label: 'Meny'
+  to: '/burgr',
+  label: 'Burgr'
+  },{
+  to: '/smash-burgr',
+  label: 'Burgr Smash'
   },{
   to: '/about',
   label: 'About Burgr'
@@ -22,7 +25,7 @@ const links = [
   <div>
     <PageTitle title="BURGR"/>
     <span class="space-y-4">
-      <RetroLink class="md:text-2xl" :label="link.label" :to="link.to" v-for="link in links"/>
+      <RetroLink class="md:text-3xl" :label="link.label" :to="link.to" v-for="link in links"/>
     </span>
   </div>
 </template>
