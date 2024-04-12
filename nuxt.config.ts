@@ -8,11 +8,14 @@ export default defineNuxtConfig({
     }
   },
   extends: ['@nuxt/ui-pro'],
-  modules: ["@nuxt/image", "@nuxt/fonts", '@nuxt/ui'],
+  modules: ["@nuxt/image", "@nuxt/fonts", '@nuxt/ui', "@nuxtjs/sanity"],
   ui: {
     icons: ['heroicons', "pixelarticons"]
   },
   app: {
     pageTransition: {name:'page', mode: 'in-out'}
+  },
+  sanity: {
+    projectId: '09r4q6pe'
   }
 })

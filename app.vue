@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class=" min-h-screen overscroll-none bg-fixed bg-cover bg-center bg-[url('/assets/background-light.png')] dark:bg-[url('/assets/background-dark.png')]" >
+  <div class=" min-h-dvh overscroll-none bg-fixed bg-cover bg-center bg-[url('/assets/background-light.png')] dark:bg-[url('/assets/background-dark.png')]" >
     <UPage>
       <UPageBody>
         <NuxtPage/>

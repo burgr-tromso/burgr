@@ -2,19 +2,25 @@
 
 const links = [
   {
-  to: '/burgr',
-  label: 'Burgr'
+  to: '/burgr-smash/meny',
+  label: 'Meny'
   },{
-  to: '/burgr-smash',
-  label: 'Burgr Smash'
-  }
+  to: '/about',
+  label: 'About Burgr Smash'
+  },{
+  to: '/gifts',
+  label: 'Gift Cards'
+  },{
+  to: '/contact',
+  label: 'Kontakt Oss'
+  },
 ]
 
 </script>
 
 <template>
   <div>
-    <PageTitle title="Choose your location!"/>
+    <PageTitle title="BURGR Smash"/>
     <span class="space-y-4">
       <RetroLink class="md:text-3xl" :label="link.label" :to="link.to" v-for="link in links"/>
     </span>
