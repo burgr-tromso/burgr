@@ -11,9 +11,6 @@ const links = [
   to: '/burgr-smash/giftcards',
   label: 'Gift Cards'
   },{
-  to: '/burgr-smash/contact',
-  label: 'Kontakt Oss'
-  },{
   to: '/burgr',
   label: 'Bytt lokasjon'
   },

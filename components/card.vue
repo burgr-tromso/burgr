@@ -52,7 +52,9 @@ const props = defineProps({
         </TabPanel>
       </TabPanels>
     </TabGroup>
-    <slot />
+    <div class="px-12">
+      <slot />
+    </div>
     <UDivider size="sm" :ui="{ border: {base: 'dark:border-slate-600'} }" />
     <RetroLink class="pb-4" label="TILBAKE" to="/burgr" :return="true" />
     

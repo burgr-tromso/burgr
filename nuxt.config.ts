@@ -19,6 +19,10 @@ export default defineNuxtConfig({
     pageTransition: {name:'page', mode: 'in-out'}
   },
   sanity: {
-    projectId: '09r4q6pe'
+    projectId: '09r4q6pe',
+    visualEditing: {
+      token: process.env.NUXT_SANITY_VISUAL_EDITING_TOKEN,
+      studioUrl: process.env.NUXT_SANITY_VISUAL_EDITING_STUDIO_URL
+    }
   }
 })
