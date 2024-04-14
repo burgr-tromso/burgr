@@ -1,16 +1,8 @@
 <script lang="ts" setup>
-
-interface item {
-  label:string,
-  description:string,
-  allergies?:string,
-  price?:number,
-  sizes?:Object,
-  icon: string
-}
+import type { Item } from '../types/index'
 
 const props = defineProps({
-  list: Array<item>
+  list: Array<Item>
 })
 
 </script>
@@ -19,11 +11,11 @@ const props = defineProps({
   <div class="mt-8">
     <ul class="space-y-6" >
         <li v-for="item in props.list" class="flex flex-col text-center space-y-1">
-          <h3 class="font text-sm md:text-xl" >{{ item.label }} <UIcon v-if="item.icon" :name="item.icon"/> </h3>
+          <h3 class="font text-sm md:text-xl" >{{ item.label }} <span class="-translate-x-8" ><UIcon v-if="item.isVegetarian" name="i-ph-leaf-bold"/><UIcon v-if="item.spicelevel > 0" v-for="n in item.spicelevel" name="i-ph-fire-bold"/></span> </h3>
           <h4 class="text-sm md:text-base" >{{ item.description }}</h4>
           <p class="text-xs md:text-sm">{{ item.allergies }}</p>
-          <p v-if="item.price">{{ item.price }},-</p>
-          <span v-else ><p v-for="size in item.sizes">{{ size.size }} - {{ size.price }},-</p></span>
+          <p v-if="item.sizes?.length == 1">{{ item.sizes[0].price }},-</p>
+          <span v-else class="flex flex-row mx-auto gap-x-2 md:max-w-xl text-sm md:text-base" ><p v-for="size in item.sizes">{{ size.size }}: {{ size.price }},-</p></span>
         </li>
       </ul>
   </div>

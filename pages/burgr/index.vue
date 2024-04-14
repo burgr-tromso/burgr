@@ -14,6 +14,9 @@ const links = [
   },{
   to: '/burgr/contact',
   label: 'Kontakt Oss'
+  },{
+  to: '/burgr-smash',
+  label: 'Bytt lokasjon'
   },
 ]
 
@@ -24,7 +27,6 @@ const links = [
     <PageTitle title="BURGR"/>
     <span class="space-y-4">
       <RetroLink :label="link.label" :to="link.to" v-for="link in links"/>
-      <RetroLink  label="Bytt lokasjon" to="/burgr-smash" />
     </span>
   </div>
 </template>

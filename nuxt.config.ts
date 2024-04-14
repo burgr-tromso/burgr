@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import { getIconCollections } from '@egoist/tailwindcss-icons'
+
 export default defineNuxtConfig({
   devtools: {
     enabled: true,
@@ -10,7 +13,7 @@ export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
   modules: ["@nuxt/image", "@nuxt/fonts", '@nuxt/ui', "@nuxtjs/sanity"],
   ui: {
-    icons: ['heroicons', "pixelarticons"]
+    icons: ['heroicons', "pixelarticons", 'ph']
   },
   app: {
     pageTransition: {name:'page', mode: 'in-out'}

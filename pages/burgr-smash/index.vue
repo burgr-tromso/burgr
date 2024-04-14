@@ -5,14 +5,17 @@ const links = [
   to: '/burgr-smash/meny',
   label: 'Meny'
   },{
-  to: '/about',
+  to: '/burgr-smash/about',
   label: 'About Burgr Smash'
   },{
-  to: '/gifts',
+  to: '/burgr-smash/gifts',
   label: 'Gift Cards'
   },{
-  to: '/contact',
+  to: '/burgr-smash/contact',
   label: 'Kontakt Oss'
+  },{
+  to: '/burgr',
+  label: 'Bytt lokasjon'
   },
 ]
 
