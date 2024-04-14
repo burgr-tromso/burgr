@@ -1,16 +1,15 @@
 <script lang="ts" setup>
+import type { UButton } from '#build/components';
 
-const query = groq`*[_id == 'menyBurgrSmash'][0]{burgers, drinks, sides}`
-const { data } = useSanityQuery(query)
+const router = useRouter()
 
-console.log(data.value)
 
 
 </script>
 
 <template>
-  <div>
-    <Card :is-menu="true" :burgers="data.burgers" :sides="data.sides" :drinks="data.drinks" ></Card>
+  <div class="mx-auto">
+    <UButton label="Test" @click="router.push({ path: 'test', query: { plan: 'private' }})" />
   </div>
 </template>
 

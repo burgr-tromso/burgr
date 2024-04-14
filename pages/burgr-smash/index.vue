@@ -8,7 +8,7 @@ const links = [
   to: '/burgr-smash/about',
   label: 'About Burgr Smash'
   },{
-  to: '/burgr-smash/gifts',
+  to: '/burgr-smash/giftcards',
   label: 'Gift Cards'
   },{
   to: '/burgr-smash/contact',
@@ -23,7 +23,7 @@ const links = [
 
 <template>
   <div>
-    <PageTitle title="BURGR Smash"/>
+    <PageTitle title="BURGR SMASH"/>
     <span class="space-y-4">
       <RetroLink class="md:text-3xl" :label="link.label" :to="link.to" v-for="link in links"/>
     </span>

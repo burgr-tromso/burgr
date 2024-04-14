@@ -37,7 +37,7 @@ const props = defineProps({
       <TabList class="grid grid-flow-col">
         <Tab as="template" v-slot="{ selected }"v-for="tab in types"><button class="h-12" :class=" { 'bg-slate-500 text-white shadow-2xl border-2 border-slate-800':selected, 'bg-slate-600 text-slate-100 hover:bg-slate-600': !selected } ">{{ tab.label }}</button></Tab>
       </TabList>
-      <TabPanels>
+      <TabPanels class="px-6">
         <TabPanel>
           <MenuList :list="burgers" />
         </TabPanel>

@@ -9,7 +9,7 @@ const links = [
   to: '/burgr/about',
   label: 'About Burgr'
   },{
-  to: '/burgr/gifts',
+  to: '/burgr/giftcards',
   label: 'Gift Cards'
   },{
   to: '/burgr/contact',

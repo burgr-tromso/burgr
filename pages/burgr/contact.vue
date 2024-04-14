@@ -7,7 +7,7 @@ const { data } = useSanityQuery(query)
 
 <template>
   <div>
-    <PageTitle title="About Burgr" />
+    <PageTitle title="Contact us" />
     <Card  class="text-center text-white">
       <UPageBody prose>
         <SanityContent :blocks="data.body" />
