@@ -1,19 +1,18 @@
 <script lang="ts" setup>
 
-const query = groq`*[_id == '602c9f97-59b6-4089-8611-ea51688e0080'][0]`
-const { data } = useSanityQuery(query)
-
 </script>
 
 <template>
   <div>
-    <PageTitle title="About Burgr" />
+    <PageTitle title="Giftcards" />
     <Card  class="text-center text-white">
-      <UPageBody prose>
-        <SanityContent :blocks="data.body" />
-      </UPageBody>
+      <h2 class="font pt-8 text-4xl">Coming soon!</h2>
     </Card>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.font {
+  font-family: 'Press Start 2P';
+}
+</style>

@@ -2,18 +2,21 @@
 
 const links = [
   {
-  to: '/burgr-smash/meny',
-  label: 'Meny'
+    to: '/burgr-smash/menu',
+    label: 'Menu'
   },{
-  to: '/burgr-smash/about',
-  label: 'About Burgr Smash'
+    to: '/burgr-smash/about',
+    label: 'About Burgr Smash'
   },{
-  to: '/burgr-smash/giftcards',
-  label: 'Gift Cards'
+    to: '/burgr-smash/giftcards',
+    label: 'Gift Cards'
   },{
-  to: '/burgr',
-  label: 'Bytt lokasjon'
-  },
+    to: '/burgr',
+    label: 'Fast travel to Burgr'
+  },{
+    to: '/',
+    label: 'To Home Menu'
+  }
 ]
 
 </script>

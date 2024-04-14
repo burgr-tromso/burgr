@@ -3,8 +3,8 @@
 
 const links = [
   {
-  to: '/burgr/meny',
-  label: 'Meny'
+  to: '/burgr/menu',
+  label: 'Menu'
   },{
   to: '/burgr/about',
   label: 'About Burgr'
@@ -13,8 +13,11 @@ const links = [
   label: 'Gift Cards'
   },{
   to: '/burgr-smash',
-  label: 'Bytt lokasjon'
-  },
+  label: 'Fast travel to Burgr Smash'
+  },{
+    to: '/',
+    label: 'To home Menu'
+  }
 ]
 
 </script>

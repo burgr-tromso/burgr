@@ -4,7 +4,7 @@ import type {Item} from '../types/index'
 
 const types = [
   {
-    label: 'Burgere',
+    label: 'Burgers',
     key: 'burgers'
   },
   {
@@ -16,7 +16,7 @@ const types = [
     key: 'extraStuff'
   },
   {
-    label: 'Drikke',
+    label: 'Drinks',
     key: 'drinks'
   }
 ]
@@ -26,7 +26,8 @@ const props = defineProps({
   burgers: Array<Item>,
   sides: Array<Item>,
   drinks: Array<Item>,
-  extraStuff: Array<Item>
+  extraStuff: Array<Item>,
+  allergies: String
 })
 
 </script>
@@ -52,11 +53,16 @@ const props = defineProps({
         </TabPanel>
       </TabPanels>
     </TabGroup>
+    <p v-if="allergies"class="md:px-24 text-center">{{ allergies }}</p>
+    <span v-if="isMenu" class="text-center">
+      <p class="mt-4"><UIcon name="i-ph-leaf-bold"/> - Vegetarian</p>
+      <p><UIcon v-for="n in 3" name="i-ph-fire-bold"/>  - Heatlevel!</p>
+    </span>
     <div class="px-12">
       <slot />
     </div>
     <UDivider size="sm" :ui="{ border: {base: 'dark:border-slate-600'} }" />
-    <RetroLink class="pb-4" label="TILBAKE" to="/burgr" :return="true" />
+    <RetroLink class="pb-4" label="BACK" to="/burgr" :return="true" />
     
   </div>
 </template>
