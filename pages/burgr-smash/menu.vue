@@ -6,7 +6,7 @@ const {data} = await useSanityQuery(query)
 </script>
 
 <template>
-<div class="mx-8">
+<div>
   <PageTitle title="Meny"/>
   <Card :is-menu="true" :burgers="data.burgers" :drinks="data.drinks" :sides="data.sides" :extra-stuff="data.extraStuff" :allergies="data.allergies" />
 </div>

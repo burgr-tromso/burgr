@@ -53,7 +53,7 @@ const props = defineProps({
         </TabPanel>
       </TabPanels>
     </TabGroup>
-    <p v-if="allergies"class="md:px-24 text-center">{{ allergies }}</p>
+    <p v-if="allergies"class=" md:px-24 px-8 text-sm md:text-base">{{ allergies }}</p>
     <span v-if="isMenu" class="text-center">
       <p class="mt-4"><UIcon name="i-ph-leaf-bold" class="text-green-500" /> - Vegetarian</p>
       <p><UIcon v-for="n in 3" name="i-ph-fire-bold" class="text-red-500" />  - Heatlevel!</p>

@@ -22,7 +22,7 @@ console.log(data)
 </script>
 
 <template>
-  <div class="mx-8">
+  <div>
     <PageTitle title="Menu" />
     <Card :is-menu="true" :burgers="data.burgers" :drinks="data.drinks" :sides="data.sides" :allergies="data.allergies" />
   </div>
