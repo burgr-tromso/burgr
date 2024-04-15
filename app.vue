@@ -1,9 +1,6 @@
 <script setup lang="ts">
-
-
 </script>
 
-<script defer data-domain="burgr.gustavsen.app" src="https://plausible.io/js/script.js"></script>
 
 
 <template>
@@ -16,5 +13,5 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped> 
 </style>
