@@ -13,9 +13,6 @@ const links = [
   },{
     to: '/burgr',
     label: 'Fast travel to Burgr'
-  },{
-    to: '/',
-    label: 'To Home Menu'
   }
 ]
 
