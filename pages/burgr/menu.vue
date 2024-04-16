@@ -24,7 +24,7 @@ console.log(data)
 <template>
   <div>
     <PageTitle title="Menu" />
-    <Card :is-menu="true" :burgers="data.burgers" :drinks="data.drinks" :sides="data.sides" :allergies="data.allergies" />
+    <Card :is-menu="true" :burgers="data.burgers" :drinks="data.drinks" :sides="data.sides" :allergies="data.allergies" :extra-stuff="data.extraStuff"  />
   </div>
 </template>
 
