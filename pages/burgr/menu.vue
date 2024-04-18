@@ -9,7 +9,7 @@ const { data } = await useSanityQuery<Menu>(query)
 <template>
   <div>
     <PageTitle title="Menu" />
-    <Card :is-menu="true" :burgers="data?.burgers" :drinks="data?.drinks" :sides="data?.sides" :allergies="data?.allergies" :menyDeal="data?.menyDeal" />
+    <Card :is-menu="true" :burgers="data?.burgers" :drinks="data?.drinks" :sides="data?.sides" :allergies="data?.allergies" :extra-stuff="data?.extraStuff" :menyDeal="data?.menyDeal"  />
   </div>
 </template>
 
