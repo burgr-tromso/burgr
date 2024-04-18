@@ -27,7 +27,8 @@ const props = defineProps({
   sides: Array<Item>,
   drinks: Array<Item>,
   extraStuff: Array<Item>,
-  allergies: String
+  allergies: String,
+  menyDeal: Object,
 })
 
 </script>
@@ -40,7 +41,13 @@ const props = defineProps({
       </TabList>
       <TabPanels class="px-6">
         <TabPanel>
-          <MenuList :list="burgers" />
+          <MenuList :list="burgers" class="mb-12" />
+
+          <div class="text-center space-y-0 " v-if="menyDeal">
+            <h2 class="font text-2xl">{{ menyDeal.label }}</h2>
+            <p>{{ menyDeal.price }},-</p>
+            <p>Includes fries and a drink</p>
+          </div>
         </TabPanel>
         <TabPanel>
           <MenuList :list="sides" />
@@ -53,7 +60,7 @@ const props = defineProps({
         </TabPanel>
       </TabPanels>
     </TabGroup>
-    <p v-if="allergies"class=" md:px-24 px-8 text-sm md:text-base">{{ allergies }}</p>
+    <p v-if="allergies"class=" md:px-24 px-8 text-sm text-center md:text-base">{{ allergies }}</p>
     <span v-if="isMenu" class="text-center">
       <p class="mt-4"><UIcon name="i-ph-leaf-bold" class="text-green-500" /> - Vegetarian</p>
       <p><UIcon v-for="n in 3" name="i-ph-fire-bold" class="text-red-500" />  - Heatlevel!</p>
@@ -67,4 +74,8 @@ const props = defineProps({
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.font{
+  font-family: 'Press start 2P';
+}
+</style>
