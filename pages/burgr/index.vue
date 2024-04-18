@@ -4,13 +4,15 @@
 const links = [
   {
   to: '/burgr/menu',
-  label: 'Menu'
+  label: 'Menu',
+  prefetch: true
   },{
   to: '/burgr/about',
   label: 'About Burgr'
   },{
-  to: '/burgr/giftcards',
-  label: 'Gift Cards'
+  to: 'https://webshop.diggecard.com/no/merchant/2099/20',
+  label: 'Gift Cards',
+  external: true
   },{
   to: '/burgr-smash',
   label: 'Fast travel to Burgr Smash'

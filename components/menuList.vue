@@ -16,7 +16,7 @@ const props = defineProps({
           <h4 class="text-sm md:text-base" >{{ item.description }}</h4>
           <p class="text-xs md:text-sm">{{ item.allergies }}</p>
           <p v-if="item.sizes?.length == 1">{{ item.sizes[0].price }},-</p>
-          <span v-else class="flex flex-row mx-auto gap-x-2 md:max-w-xl text-sm md:text-base" ><p v-for="size in item.sizes">{{ size.size }}: {{ size.price }},-</p></span>
+          <span v-else class=" flex flex-row mx-auto gap-x-2 md:max-w-xl text-sm md:text-base" ><p class="" v-for="size in item.sizes">{{ size.size }}: {{ size.price }},-</p></span>
         </li>
       </ul>
 
