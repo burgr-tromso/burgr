@@ -44,7 +44,7 @@ const props = defineProps({
           <MenuList :list="burgers" class="mb-12" />
 
           <div class="text-center space-y-0 " v-if="menyDeal.active">
-            <h2 class="font text-2xl">{{ menyDeal.label }}</h2>
+            <h2 class="font text-xl">{{ menyDeal.label }}</h2>
             <p>{{ menyDeal.price }},-</p>
             <p>Includes fries and a drink</p>
           </div>
