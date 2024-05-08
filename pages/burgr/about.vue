@@ -7,18 +7,18 @@ const { data } = await useSanityQuery(query)
 
 <template>
   <div>
-    <PageTitle title="About Burgr" />
-    <Card  class="text-center text-white pt-8">
+    <PageTitle class="text-5xl" title="About Burgr" />
+    <Card class="text-center">
       <div class="prose dark:prose-invert">
         <SanityContent :blocks="data.body" class="prose-h2:font prose-h1:font" />
         <h3 class="underline">How to reach us</h3>
-        <span class="flex flex-col justify-center">
+        <span class="flex flex-col text-center">
           <ULink v-if="data.phone" :to="'tel:' + data.phone" >Phone: {{ data.phone }}</ULink>
           <ULink icon="i-pixelarticons-mail" v-if="data.email" :to="'mail:' + data.email" >Email: {{ data.email }}</ULink>
         </span>
         <h4><UIcon name="i-pixelarticons-pin" /> {{data.address.street}}</h4>
         <p>{{ data.address.zipcode }} {{ data.address.state }}</p>
-        
+
       </div>
     </Card>
   </div>

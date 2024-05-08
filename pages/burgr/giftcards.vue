@@ -5,8 +5,8 @@
 <template>
   <div>
     <PageTitle title="Giftcards" />
-    <Card  class="text-center text-white">
-      <h2 class="font pt-8 text-4xl">Coming soon!</h2>
+    <Card  class="text-center">
+      <h2 class="font pt-8 text-4xl text-slate-800">Coming soon!</h2>
     </Card>
   </div>
 </template>

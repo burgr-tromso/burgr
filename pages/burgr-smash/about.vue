@@ -1,14 +1,16 @@
 <script lang="ts" setup>
+import type { About } from '~/types/sanity.types';
+
 
 const query = groq`*[_id == '05fe043f-4edc-48c5-89a8-f3b998d046e5'][0]`
-const { data } = await useSanityQuery(query)
+const { data } = await useSanityQuery<About>(query)
 
 </script>
 
 <template>
   <div>
     <PageTitle title="About Burgr" />
-    <Card  class="text-center text-white pt-8">
+    <Card v-if="data"  class="text-center">
       <div class="prose dark:prose-invert">
         <SanityContent :blocks="data.body" class="prose-h2:font prose-h1:font" />
         <h3 class="underline">How to reach us</h3>

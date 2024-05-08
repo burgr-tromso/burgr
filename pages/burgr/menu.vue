@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { Menu } from '~/types';
+import type { Menu } from '~/types/sanity.types';
 
 const query = groq`*[_id == 'efadea53-c2a7-448d-abf6-36d69011b7f1'][0]{burgers, drinks, sides, extraStuff, allergies, menyDeal}`
 const { data } = await useSanityQuery<Menu>(query)

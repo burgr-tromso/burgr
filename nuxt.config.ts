@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     }
   },
   extends: ['@nuxt/ui-pro'],
-  modules: ["@nuxt/image", "@nuxt/fonts", '@nuxt/ui', "@nuxtjs/sanity"],
+  modules: ["@nuxt/image", "@nuxt/fonts", '@nuxt/ui', "@nuxtjs/sanity", 'nuxt-icon'],
   ui: {
     icons: ['heroicons', "pixelarticons", 'ph']
   },
