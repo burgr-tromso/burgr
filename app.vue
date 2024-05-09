@@ -10,7 +10,7 @@ useSeoMeta({
 
 useHead({
   script: [
-    { src: "https://analytics.eu.umami.is/script.js", defer: true, async: false  }
+    { src: "https://analytics.eu.umami.is/script.js", defer: true, async: false, data-website-id="b9ba91cb-2d4d-422a-9694-b0245977dd3e"}
   ]
 })
 </script>
