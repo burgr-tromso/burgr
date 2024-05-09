@@ -75,7 +75,7 @@ const props = defineProps({
         <p v-if="allergies"class=" md:px-24 px-8 pt-4 text-sm text-center md:text-base">{{ allergies }}</p>
         <span v-if="isMenu" class="text-center p-16">
           <p class="mt-4"><Icon name="i-ph-leaf-bold" class="text-green-500" /> - Vegetarian</p>
-          <p><Icon v-for="n in 3" name="i-ph-fire-bold" class="text-red-500" />  - Heatlevel!</p>
+          <p><Icon v-for="n in 3" name="i-ph-fire-bold" class="text-red-500" />  - Heatlevel</p>
         </span>
         <UDivider size="sm" :ui="{ border: {base: 'dark:border-slate-600'} }" />
         <RetroLink class="py-8" label="BACK" :return="true" />
