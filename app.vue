@@ -7,6 +7,12 @@ useSeoMeta({
   description: 'The homepage of Burgr and Burgr Smash, located in Tromsø',
   ogDescription: 'The homepage of Burgr and Burgr Smash, located in Tromsø'
 })
+
+useHead({
+  script: [
+    { src: "https://analytics.eu.umami.is/script.js", defer: true, async: false  }
+  ]
+})
 </script>
 
 
