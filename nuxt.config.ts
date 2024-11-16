@@ -7,18 +7,18 @@ export default defineNuxtConfig({
       enabled: true
     }
   },
-
-  extends: ['@nuxt/ui-pro'],
-  modules: ["@nuxt/image", "@nuxt/fonts", '@nuxt/ui', "@nuxtjs/sanity", 'nuxt-icon'],
-
-  ui: {
-    icons: ['heroicons', "pixelarticons", 'ph']
-  },
-
+  modules: [
+    "@nuxt/image",
+    "@nuxt/fonts",
+    '@nuxt/ui',
+    "@nuxtjs/sanity",
+    'nuxt-icon',
+    '@nuxt/scripts'
+  ],
+  css: ['~/assets/css/main.css'],
   sanity: {
     projectId: '09r4q6pe',
     apiVersion: '2022-03-07'
   },
-
   compatibilityDate: '2024-11-16'
 })
