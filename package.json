@@ -10,19 +10,19 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.22",
-    "@iconify-json/jam": "^1.1.8",
-    "@iconify-json/ph": "^1.1.13",
-    "@iconify-json/pixelarticons": "^1.1.12",
+    "@headlessui/vue": "^1.7.23",
+    "@iconify-json/jam": "^1.2.1",
+    "@iconify-json/ph": "^1.2.1",
+    "@iconify-json/pixelarticons": "^1.2.1",
     "@nuxt/fonts": "^0.6.1",
-    "@nuxt/image": "^1.7.0",
-    "@nuxt/ui": "^2.16.0",
-    "@nuxt/ui-pro": "^1.2.0",
-    "@nuxtjs/sanity": "^1.11.3",
-    "@sanity/client": "^6.18.0",
+    "@nuxt/image": "^1.8.1",
+    "@nuxt/ui": "^2.19.2",
+    "@nuxt/ui-pro": "^1.5.0",
+    "@nuxtjs/sanity": "^1.12.2",
+    "@sanity/client": "^6.22.4",
     "nuxt": "^3.14.159",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "nuxt-icon": "^0.6.10"

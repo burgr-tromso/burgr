@@ -90,6 +90,6 @@ const props = defineProps({
 
 <style scoped>
 .font{
-  font-family: 'Press start 2P';
+  font-family: 'Press Start 2P';
 }
 </style>
